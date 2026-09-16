@@ -1,0 +1,16 @@
+@'
+node_modules/
+*.tgz
+
+*.mtdb
+*.mtdb.lock
+*.mtdb.lock.guard
+*.mtdb.create.tmp
+*.mtdb.compact.tmp
+
+test/.tmp-*/
+test/**/.tmp-*/
+
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding UTF8 .gitignore

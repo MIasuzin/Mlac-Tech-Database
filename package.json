@@ -1,0 +1,53 @@
+{
+  "name": "mtdb",
+  "version": "0.3.0-rc.1",
+  "description": "Compact single-file JSON storage for Node.js",
+  "main": "index.js",
+  "type": "commonjs",
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "API.md",
+    "ERRORS.md",
+    "FORMAT.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "test": "node test/basic.js",
+    "test:stress": "node test/stress.js",
+    "test:crash": "node test/crash-recovery.js",
+    "test:endurance": "node test/endurance.js 600 100000",
+    "test:compact-crash": "node test/compact-crash.js",
+    "test:collision": "node test/collision.js",
+    "test:corruption": "node test/corruption.js",
+    "test:writer-lock": "node test/writer-lock.js",
+    "test:list": "node test/list.js",
+    "test:regression": "node test/regression.js",
+    "test:all": "npm test && npm run test:crash && npm run test:compact-crash && npm run test:collision && npm run test:corruption && npm run test:writer-lock && npm run test:list && npm run test:regression && npm run test:stress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIasuzin/Mlac-Tech-Database.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MIasuzin/Mlac-Tech-Database/issues"
+  },
+  "homepage": "https://github.com/MIasuzin/Mlac-Tech-Database#readme",
+  "keywords": [
+    "database",
+    "storage",
+    "json",
+    "embedded-database",
+    "embedded-storage",
+    "single-file",
+    "nodejs",
+    "crash-recovery"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "Apache-2.0"
+}
