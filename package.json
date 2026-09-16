@@ -1,5 +1,5 @@
 {
-  "name": "mtdb",
+  "name": "@mlasuzin/mtdb",
   "version": "0.3.0-rc.1",
   "description": "Compact single-file JSON storage for Node.js",
   "main": "index.js",
